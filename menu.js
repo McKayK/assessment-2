@@ -110,7 +110,7 @@ const foodArr = [
     popularity: 6,
     rating: 5,
     tags: ['kids', 'value', 'meat']
-        }
+        },
     {
         name: 'sausage',
         price: 15,
@@ -118,7 +118,7 @@ const foodArr = [
         popularity: 4,
         rating: 2,
         tags: ['adult', 'meat']
-        }
+        },
     {
     name: 'Hawaiian ',
     price: 20,
@@ -126,7 +126,7 @@ const foodArr = [
     popularity: 7,  
     rating: 6,
     tags: ['adult', 'meat', 'large', 'veggie']
-        }
+        },
     {
     name: 'Bbq Chicken',
     price: 20,
@@ -134,7 +134,7 @@ const foodArr = [
     popularity: 8,
     rating: 6,
     tags: ['adult', 'large', 'meat', 'bbq']
-        }
+        },
     {
         name: 'Alfredo',
         price: 15,
