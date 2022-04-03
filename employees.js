@@ -52,7 +52,7 @@ const empOne = new Employee('Moash', 'all of them')
 
 //CODE HERE
 
-// empOne.getSchedule()
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -68,9 +68,11 @@ const empOne = new Employee('Moash', 'all of them')
 
 //CODE HERE
 
-empTwo = { 
+const empTwo = { 
     ...empOne
 }
+
+empTwo.name = 'Nick'
 
 // console.log(empTwo)
 
@@ -126,7 +128,7 @@ class Manager extends Employee {
 
 //CODE HERE
 
-const manager = new Manager('Kelsier', 'weekday morning, weekday afternoon', ['Dockson', 'Ham'])
+const manager = new Manager('Kelsier', ['weekday morning, weekday afternoon'], ['Dockson', 'Ham'])
 
 /*
     Call the `getEmployees` method on the
@@ -147,7 +149,7 @@ const manager = new Manager('Kelsier', 'weekday morning, weekday afternoon', ['D
 
 //CODE HERE 
 
-manager.addEmployee('Breeze')
+// manager.addEmployee('Breeze')
 
 /*
     Call the `getEmployees` method on the
@@ -157,4 +159,4 @@ manager.addEmployee('Breeze')
 
 //CODE HERE
 
-manager.getEmployees()
+// manager.getEmployees()

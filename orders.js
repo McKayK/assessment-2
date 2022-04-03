@@ -58,9 +58,9 @@ class Ticket {
 
 //CODE HERE
 
-const firstTicket = new Ticket('pizza, bread, soda', 'ordered at: 7:03 PM', 'customer: 575')
+const firstTicket = new Ticket(['pizza', 'bread', 'soda'], '7:03 PM', 575)
 
-
+console.log(firstTicket)
 /*
     Call the `updateStatus` method on
     `firstTicket` passing in the string

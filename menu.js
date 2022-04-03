@@ -105,7 +105,7 @@ const {category} = pizza
 const foodArr = [
     {
     name: 'Pepperoni',
-    price: 15,
+    price: 6,
     category: 'entree',
     popularity: 6,
     rating: 5,
@@ -121,7 +121,7 @@ const foodArr = [
         },
     {
     name: 'Hawaiian ',
-    price: 20,
+    price: 10,
     category: 'entree',
     popularity: 7,  
     rating: 6,
@@ -160,12 +160,11 @@ const foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((tag) => {
-    if(tag.tags === 'large'){
-        return tag
-    }
+const filteredFood = foodArr.filter((pizzaObj) => {
+    return pizzaObj.tags.includes('large')
 })
 
+// console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -208,6 +207,16 @@ const filteredFood = foodArr.filter((tag) => {
 
 //CODE HERE
 
+const filterByProperty = (property, number, type) =>{
+    const filteredArr = foodArr.filter(pizza => {
+        if(type === 'above'){
+            return pizza[property] > number
+        }else if( type === 'below'){
+            return pizza[property] < number
+        }
+    })
+    return filteredArr
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -217,3 +226,5 @@ const filteredFood = foodArr.filter((tag) => {
 */
 
 //CODE HERE
+
+console.log(filterByProperty('price', 10, 'above'))

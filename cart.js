@@ -101,7 +101,7 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
 
 const customer = {
     name: 'Lift',
-    payMethod: 'none',
+    payMethod: 'none', //she stole the food 
     qtyItems: 16,
     totalCost: 0
 }
